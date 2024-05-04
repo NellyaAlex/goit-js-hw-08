@@ -56,7 +56,7 @@ function createGalleryItem(array) {
       image => `
     <li class="gallery-item">
     <a href="${image.original}" class="gallery-link">
-    <img class="gallery-image" src="${image.preview}" alt="${image.description}" data-sourse="${image.original}"/>
+    <img class="gallery-image" src="${image.preview}" alt="${image.description}" data-source="${image.original}"/>
     </a>
     </li>
     `
@@ -74,7 +74,7 @@ function imageClickHandler(event) {
 
   const instance = basicLightbox.create(`
   <div class="modal">
-    <img src="${currentImage.dataset.source}" alt="${currentImage.description}">
+    <img class="gallery-image" src="${event.target.dataset.source}" alt="${event.target.description}">
     </div>
     `);
 

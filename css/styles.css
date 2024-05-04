@@ -1,3 +1,7 @@
+body {
+  background-color: F5F5F5;
+}
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -29,4 +33,14 @@
 
 .gallery-item:hover .gallery-image {
   transform: scale(1.05);
+}
+
+.modal {
+  position: absolute;
+  padding: 0;
+  width: 1112px;
+  min-height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
 }
